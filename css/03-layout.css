@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--esp-2);
+    background-color: var(--color-fondo);
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--esp-3);
+}
+.section {
+    margin-bottom: var(--esp-4);
+}
+footer {
+    text-align: center;
+    padding: var(--esp-3);
+    border-top: 1px solid #ccc;
+}

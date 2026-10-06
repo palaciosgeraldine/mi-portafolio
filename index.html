@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de desarrollador web">
+    <title>Portafolio | Desarrollador Web</title>
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="css/00-reset.css">
+    <link rel="stylesheet" href="css/01-variables.css">
+    <link rel="stylesheet" href="css/02-tipografia.css">
+    <link rel="stylesheet" href="css/03-layout.css">
+    <link rel="stylesheet" href="css/04-componentes.css">
+    <link rel="stylesheet" href="css/05-utilidades.css">
+    <link rel="stylesheet" href="css/06-responsive.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="header">
+        <h1 class="logo">Mi Portafolio</h1>
+        <div class="header-controls">
+            <button id="dark-mode-toggle" aria-label="Cambiar modo oscuro">🌙</button>
+            <button class="hamburger-btn" id="menu-btn" aria-label="Abrir menú de navegación">☰</button>
+        </div>
+        
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="hero-section">
+            <h2>Hola,Geraldine Palacios Romero</h2>
+            <p>Estudiante del Cecyt 3 como tecnico en computacion</p>
+        </section>
+
+        <section id="sobre-mi" class="section">
+            <h2>Sobre mi</h2>
+            <p>Soy estudiante aque esta aprendiendo sobre los programas y herrramientas en la computacion.</p>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto-card">
+                    <h3>Sistema de Gestion Web</h3>
+                    <p>Progracacion en java scrip</p>
+                    <a href="img/1java.jpg" target="_blank" rel="noopener">Ver Proyecto</a>
+                </article>
+                <article class="proyecto-card">
+                    <h3>E-Commerce Responsive</h3>
+                    <p>Bases de datos en cmd</p>
+                    <a href="img/Captura de pantalla 2026-10-02 202006.png" target="_blank" rel="noopener">Ver Proyecto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li><strong>Frontend:</strong> HTML5 basico, CSS3 (Flexbox/Grid), JavaScript ES6+</li>
+                <li><strong>Herramientas:</strong> Git, GitHub, VS Code, Lighthouse</li>
+                <li><strong>Calidad:</strong> Accesibilidad (WCAG AA), Responsive Design</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <p id="form-feedback" class="feedback-msg" aria-live="polite"></p>
+        </section>
+
+        <aside id="extras" class="aside-section">
+            <p>💡 Disponible para proyectos freelance y colaboraciones de desarrollo web.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Portafolio. Construido con HTML5, CSS3 y JS Vanilla.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu.active {
+        display: block;
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 769px) {
+    .hamburger-btn {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+    .nav-menu ul {
+        display: flex;
+        gap: var(--esp-2);
+        list-style: none;
+    }
+}

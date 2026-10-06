@@ -1,0 +1,35 @@
+.proyecto-card {
+    border: 1px solid #ccc;
+    border-radius: var(--radio);
+    padding: var(--esp-2);
+    box-shadow: var(--sombra);
+    margin-bottom: var(--esp-2);
+}
+button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: var(--esp-1) var(--esp-2);
+    border-radius: var(--radio);
+    cursor: pointer;
+}
+button:focus, a:focus, input:focus, textarea:focus {
+    outline: 2px solid var(--color-acento);
+}
+.form-group {
+    margin-bottom: var(--esp-2);
+}
+.form-group label {
+    display: block;
+    margin-bottom: var(--esp-1);
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: var(--esp-1);
+    border: 1px solid #ccc;
+    border-radius: var(--radio);
+}
+.feedback-msg {
+    margin-top: var(--esp-2);
+    font-weight: bold;
+}
